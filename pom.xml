@@ -14,6 +14,25 @@
     </license>
   </licenses>
   
+  <distributionManagement>
+	  <snapshotRepository>
+	      <id>ossrh</id>
+	      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+	  </snapshotRepository>
+	  <repository>
+	    <id>ossrh</id>
+	    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/
+	    </url>
+	  </repository>
+  </distributionManagement>
+  
+  <scm>
+      <connection>scm:git:git:https://github.com/ElandaOfficial/STooly.git</connection>
+      <developerConnection>scm:git:git@github.com:elandaofficial/elandaofficial.git</developerConnection>
+      <url>https://github.com/ElandaOfficial/STooly</url>
+      <tag>HEAD</tag>
+  </scm>
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -40,6 +59,11 @@
   </repositories>
   
   <dependencies>
+	  <dependency>
+	      <groupId>org.apache.maven.scm</groupId>
+	      <artifactId>maven-scm-provider-gitexe</artifactId>
+	      <version>1.9.5</version>
+	  </dependency>
       <dependency>
           <groupId>org.spigotmc</groupId>
           <artifactId>spigot-api</artifactId>
