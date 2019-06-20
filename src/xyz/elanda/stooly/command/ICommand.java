@@ -43,7 +43,7 @@ public interface ICommand
 	public String getUsage();
 	
 	/**
-		Gets the name of the command. (this is not the command itself)
+		Gets the name of the command.
 		
 		@return The name of the command
 	 */
